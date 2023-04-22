@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.yjyt.mapper.ProductionCalendarMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.yjyt.domain.ProductionCalendar">
+        <id property="id" column="id" jdbcType="CHAR"/>
+        <result property="lineId" column="line_id" jdbcType="INTEGER"/>
+        <result property="name" column="name" jdbcType="VARCHAR"/>
+        <result property="startDate" column="start_date" jdbcType="DATE"/>
+        <result property="endDate" column="end_date" jdbcType="DATE"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,line_id,name,
+        start_date,end_date
+    </sql>
+</mapper>

@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package grpc;
+option java_package = "com.example.yjyt.grpc";
+option java_outer_classname = "GRPCService";
+option java_multiple_files = true;
+
+service Predict {
+    rpc predict(Parameter) returns (Result) {}  // 双向非流
+}
+
+// 双向非流 参数定义
+message Parameter {
+    string trainId = 1;
+    string deadline = 2;
+}
+
+message Result {
+    int32 code = 1;
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.yjyt.mapper.YardShopTasktypesMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.yjyt.domain.YardShopTasktypes">
+        <id property="id" column="id" jdbcType="BIGINT"/>
+        <result property="yardId" column="yard_id" jdbcType="VARCHAR"/>
+        <result property="tasktypeId" column="tasktype_id" jdbcType="BIGINT"/>
+        <result property="shopNameString" column="shop_name_string" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        yard_id,shopName,tasktypes
+    </sql>
+</mapper>

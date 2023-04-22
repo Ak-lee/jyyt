@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.yjyt.mapper.TasktypeDetailMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.yjyt.domain.TasktypeDetail">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="taskTypeId" column="task_type_id" jdbcType="BIGINT"/>
+            <result property="requireHour" column="require_hour" jdbcType="INTEGER"/>
+            <result property="requireDay" column="require_day" jdbcType="INTEGER"/>
+            <result property="requireHeadcount" column="require_headcount" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,task_type_id,require_hour,
+        require_day,require_headcount
+    </sql>
+</mapper>

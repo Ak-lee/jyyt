@@ -1,0 +1,51 @@
+# font-end
+
+.DS_Store
+web/node_modules/
+web/dist/
+web/npm-debug.log*
+web/yarn-debug.log*
+web/yarn-error.log*
+web/package-lock.json
+
+web/.idea
+web/.vscode
+web/*.suo
+web/*.ntvs*
+web/*.njsproj
+web/*.sln
+
+# back-end
+yjyt/HELP.md
+yjyt/target/
+yjyt/!.mvn/wrapper/maven-wrapper.jar
+yjyt/!**/src/main/**/target/
+yjyt/!**/src/test/**/target/
+
+### STS ###
+yjyt/.apt_generated
+yjyt/.classpath
+yjyt/.factorypath
+yjyt/.project
+yjyt/.settings
+yjyt/.springBeans
+yjyt/.sts4-cache
+
+### IntelliJ IDEA ###
+yjyt/.idea
+yjyt/*.iws
+yjyt/*.iml
+yjyt/*.ipr
+
+### NetBeans ###
+yjyt/nbproject/private/
+yjyt/nbbuild/
+yjyt/dist/
+yjyt/nbdist/
+yjyt/.nb-gradle/
+yjyt/build/
+yjyt/!**/src/main/**/build/
+yjyt/!**/src/test/**/build/
+
+### VS Code ###
+yjyt/.vscode/

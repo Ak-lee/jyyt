@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.yjyt.mapper.ForcastMileageMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.yjyt.domain.ForcastMileage">
+            <result property="trainId" column="train_id" jdbcType="CHAR"/>
+            <result property="mileage" column="mileage" jdbcType="INTEGER"/>
+            <result property="calendar" column="calendar" jdbcType="DATE"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        train_id,mileage,calendar
+    </sql>
+</mapper>
